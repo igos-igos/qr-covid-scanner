@@ -1,11 +1,15 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import FocusAwareStatusBar from '../components/CustomStatusBar/CustomStatusBar';
 import ScannerContainer from '../containers/ScannerContainer/ScannerContainer';
 
 const ScannerScreen = () => {
   return (
     <>
-      <StatusBar translucent backgroundColor="transparent" />
+      <FocusAwareStatusBar
+        translucent
+        barStyle="light-content"
+        backgroundColor="transparent"
+      />
       <ScannerContainer />
     </>
   );

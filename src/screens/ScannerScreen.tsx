@@ -1,8 +1,14 @@
 import React from 'react';
-import Scanner from '../containers/Scanner/Scanner.container';
+import {StatusBar} from 'react-native';
+import ScannerContainer from '../containers/ScannerContainer/ScannerContainer';
 
 const ScannerScreen = () => {
-  return <Scanner />;
+  return (
+    <>
+      <StatusBar translucent backgroundColor="transparent" />
+      <ScannerContainer />
+    </>
+  );
 };
 
 export default ScannerScreen;

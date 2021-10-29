@@ -1,6 +1,6 @@
 import React from 'react';
 import {LogBox, StatusBar} from 'react-native';
-import RootNavigation from './navigations/RootNavigation';
+import TabNavigation from './navigations/TabNavigation/TabNavigation';
 
 LogBox.ignoreLogs(['Reanimated 2']);
 
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <StatusBar />
-      <RootNavigation />
+      <TabNavigation />
     </>
   );
 };
